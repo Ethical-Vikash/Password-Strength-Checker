@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body style="position: relative;">
+    
+   <header>
+        <div class="main">
+            <div class="nav">
+                <div class="navbar">
+                    <div class="icon">
+                        <h2 class="logo">Password Analyzer</h2>
+                    </div>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="index.html">Validate Your Password</a></li>
+                        <li><a href="https://passwords.google.com/?pli=1">Password Manager</a></li>
+
+                        <li><a href="https://github.com/Ethical-Vikash">Contact</a></li>
+                        <li> <a href="#" onclick="openWindow()"><i class="fas fa-user-circle profile-icon"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <H1 style="position: absolute;margin-left: 170px; font-size: 60px; color: white;">Hi! Welcome to the Password Analyzer</H1>
+    <div id="miniWindow">
+        <div class="window-content" style=" z-index: 100;">
+            <span class="close-btn" onclick="closeWindow()">&times;</span>
+            <iframe src="login/login.html" width="600" height="800" style="border-color: transparent; "></iframe>
+        </div>
+  </div>
+   <script>
+    function openWindow() {
+      document.getElementById("miniWindow").style.display = "block";
+    }
+
+    function closeWindow() {
+      document.getElementById("miniWindow").style.display = "none";
+    }
+  </script>
+</body>
+</html>

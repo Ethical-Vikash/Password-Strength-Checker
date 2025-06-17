@@ -287,15 +287,23 @@ header{
     }
 
     .close-btn {
-        color: white;
-        position: absolute;
-        top: 50px; right: 15px;
-        font-size: 50px;
-        cursor: pointer;
-    }
-   
-    
+    color: #ff8c00;
+    background-color: rgb(2, 28, 54);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 169px;
+    right: 95px;
+    font-size: 36px;
+    line-height: 36px;       /* vertically center the × symbol */
+    text-align: center;       /* horizontally center the × symbol */
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-   
-
-
+.close-btn:hover {
+    background-color: #ff8c00;
+    color: white;
+}
